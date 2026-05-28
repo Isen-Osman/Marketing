@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маркетинг - Студиски Материјали</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p.subtitle {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .card h2 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: var(--secondary-color);
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 2rem;
+            color: #94a3b8;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Маркетинг Студиски Материјали</h1>
+        <p class="subtitle">Централен индекс на сите предавања и водичи</p>
+    </header>
+
+    <main class="container">
+        <a href="study_guide.html" class="card">
+            <div class="card-icon">📚</div>
+            <h2>Главен Водич (Study Guide)</h2>
+        </a>
+
+        <a href="Poglavje_17_Studiranje.html" class="card">
+            <div class="card-icon">📖</div>
+            <h2>Поглавје 17</h2>
+        </a>
+
+        <a href="Marketing_Kanali_Studiranje.html" class="card">
+            <div class="card-icon">🛤️</div>
+            <h2>Маркетинг Канали</h2>
+        </a>
+
+        <a href="Reklamiranje_i_PR_Studiranje.html" class="card">
+            <div class="card-icon">📢</div>
+            <h2>Рекламирање и PR</h2>
+        </a>
+
+        <a href="Lichna_prodazba_Studiranje.html" class="card">
+            <div class="card-icon">🤝</div>
+            <h2>Лична Продажба</h2>
+        </a>
+    </main>
+
+    <footer>
+        &copy; 2026 Маркетинг Студии
+    </footer>
+
+</body>
+</html>
